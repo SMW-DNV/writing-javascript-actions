@@ -17,6 +17,7 @@ async function run() {
       });
     } catch (err) {
         core.setFailed(err.message);
+        core.setFailed(err.jokeBody);
     }
   }
   
